@@ -1,0 +1,9 @@
+DataFrame의 속성:
+
+DataFrame의 열 Series.name == DataFrame.columns의 원소
+DataFrame.columns.name
+DataFrame.index.name
+
+시리즈 새로운 열 삽입?
+
+DataFrame 생성할 때 인자로 전달하는 Series는 name과 index.name을 무시하여, 딕셔너리와 같게 취급한다.
