@@ -1,0 +1,13 @@
+pandas.Timestamp : 파이썬 datetime에 대응하는 한 일시를 의미하는 객체. (freq 속성을 보유한다?)
+pandas.DatetimeIndex : Timestamp 여러개가 모여 이루는 색인. freq 속성을 보유한다.
+TimeSeries : DatetimeIndex가 색인인 Series
+
+data_range()->DatetimeIndex (시간 포함여부는 전달되는 기본빈도에 따른다.)
+
+pandas.tseries.offsets.Hour : 기본빈도('H', '4D' 등)에 대응하는 객체
+
+pandas.Period : 기간을 의미하는 객체. freq 속성을 보유한다.
+pandas.PeriodIndex : Period 여러개가 모여 이루는 색인. freq 속성을 보유한다.
+
+Period 객체의 value인자는 freq인자의 빈도단위까지 표시한다.
+예를 들어, freq='M'이면, 출력은 Period('2019-2', 'M')이다.

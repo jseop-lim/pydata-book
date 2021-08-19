@@ -1,0 +1,8 @@
+pivot		일부 칼럼을 index, columns로 이동
+unstack		index -> columns
+stack		columns -> index
+melt		http://ds.sumeun.org/?p=930
+pivot_table
+
+Long Form: id, key, value 열로 구성된다.
+Short Form의 한 행은 id가 같은 Long Form의 여러 열을 의미한다.

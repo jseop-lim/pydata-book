@@ -1,0 +1,11 @@
+Series.agg		Series 모든 원소에 대한 집계함수 한 개 이상 사용	-> scalar, Series or DataFrame
+Series.map		Series 각 원소별로 단순한 함수 적용			-> Series
+Series.apply		Series '각 원소별로' 복잡한 함수 적용 (매개변수 전달 등)-> Series or DataFrame
+
+DataFrame.agg		DataFrame의 행이나 열(Series) 단위로 집계함수 사용	-> scalar, Series or DataFrame
+DataFrame.applymap	DataFrame 각 원소별로 단순한 함수 적용			-> DataFrame
+DataFrame.apply		DataFrame의 '행이나 열(Series) 단위로' 복잡한 함수 적용	-> Series or DataFrame
+
+DataFrame.transform	Takes one function that is expected to be applied to a column and return a column of equal size.
+
+* DataFrame.apply = .agg + .transform

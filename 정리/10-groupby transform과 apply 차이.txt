@@ -1,0 +1,13 @@
+func 예시) lambda x: x.max() - x.min()
+
+DataFrameGroupBy.transform(func, *args, engine=None, engine_kwargs=None, **kwargs)
+=> func 함수의 매개변수 x는 "DataFrame의 열 Series"이다.
+=> 만약 func의 반환값이 Series가 아닌 스칼라값이라면, Series로 브로드캐스팅하여 반환한다.
+
+GroupBy.apply(func, *args, **kwargs)
+=> func 함수의 매개변수 x는 "DataFrame 전체"이다.
+=> 만약 func의 반환값 형태에 무관히 작동한다.
+
+
+이외는 아래 링크 참고
+https://steadiness-193.tistory.com/42?category=947982

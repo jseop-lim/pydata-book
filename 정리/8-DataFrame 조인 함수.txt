@@ -1,0 +1,6 @@
+https://yganalyst.github.io/data_handling/Pd_12/
+
+<Pandas DataFrame 조인하기>
+
+1. merge: 공통 열을 기준으로 두 테이블을 조인한다.
+2. join : DataFrame의 index를 기준으로 조인한다.

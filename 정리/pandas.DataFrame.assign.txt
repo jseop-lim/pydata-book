@@ -1,0 +1,9 @@
+pandas.DataFrame.assign(**kwargs)
+
+**kwargs : dict of {str: callable or Series}. Series 혹은 같은 Series를 반환하는 callable 객체. callable의 인자로는 DataFrame이 전달된다.
+
+**kwargs 예시)
+new_col1 = df['col1']
+new_col2 = pd.Series(np.arange(len(df)), index=df.index)
+new_col3 = lambda d: d['col1']-d['col2']
+

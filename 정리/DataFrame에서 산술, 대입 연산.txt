@@ -1,0 +1,17 @@
+DataFrame의 산술, 대입 연산은 '같은 색인' 원소끼리 작용한다. 즉 같은 index와 columns 값을 가진 원소끼리 연산한다. 두 DataFrame 중 하나에만 해당 색인에 원소가 존재하면, NaN을 반환한다.
+
+DataFrame과 Series의 산술연산 시에는 index를 공유해야 연산이 성립한다.
+DataFrame에 Series를 대입하는 연산은 허용하지 않는다.
+
+DataFrame에 NaN 값이 있으면 산술이든 대입이든 연산결과는 NaN이다.
+ex)
+data[data > 5]
+# 출력
+  5   6 NaN
+  3 NaN   8
+
+data[data > 5] = 99
+data[data > 5]
+# 출력
+  5  99 NaN
+  3 NaN  99
